@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    
+    <link rel="icon" type="image/png" href="https://www.google.com/s2/u/0/favicons?domain=frontendmentor.io">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Bootstrap 5 Columns & Rows</title>
+    <style>
+        
+        @media (max-width: 1199px) {
+            
+            .box-long {
+            height: 100%;
+            }
+            .box-short {
+            height: 100%;
+            }
+        }
+        @media (max-width: 576px) {
+            
+            .box-long {
+            height: 100%;
+            }
+            .box-short {
+            height: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    
+
+
+<section class="mt-5 ">
+<!-- CONTAINER FLUID TAKES UP THE PAGES FULL WIDTH -->
+<div class="container-fluid">
+
+<!--        MAIN-ROW    OFFSET FROM LEFT AT 2 SIZES -->
+<div class="row         offset-xxl-1 offset-xl-0">
+    <!--        SETTING HOW MANY COLUMNS PER BREAK POINT     -->
+    <div class="col-xl-8 col-xxl-8 col-lg-11 col-md-12">
+            
+        <!-- row -->
+        <div class="row">
+                <!-- Columns taken up -->
+                <!--        COLUMNS SIZES                                       MARGIN ON THE Y AXIS            LEFT HAND SIDE OFFSET VALUES                    PADDING CREATES EVEN GAP BETWEEN DIVS AT LARGER SIZES -->
+                <div class="col-xxl-8 col-xl-6 col-lg-11 col-md-10 col-sm-10    my-lg-0 my-md-2 my-sm-4     offset-xl-0 offset-lg-1 offset-md-1 offset-lg-1 offset-sm-1     wrap-padding  my-sm-4 my-md-2 my-lg-0">
+                    <!--        CARD MAIN DIV       WHITE TEXT     BOX-SHADOW      BOX-SHORT IS THE CUSTOM CLASS FOR HEIGHT OF 4 DIVS -->
+                    <div class=" card bg-primary    text-light     shadow          box-short">
+                        <!-- Card Beginning -->
+                        <!--        CARD-BODY IS AN INNER DIV WHICH CREATES A MARGIN AROUND ANYTHING INSERTED       	-->
+                        <div class="card-body">
+                            
+                                <!-- User Image -->
+                                <!--        FLOAT-LEFT      COLUMNS SIZES       -->
+                                <div class="float-start     col-xxl-1 col-xl-3 col-lg-1 col-md-1">
+                                    <img class="rounded-circle img-sizing" src="https://randomuser.me/api/portraits/men/99.jpg">
+                                </div>
+                                <!-- User Info -->
+                                <!--        FLOAT-LEFT      COLUMNS SIZES                               PADDING & MARGIN        -->
+                                <div class="float-start     col-xxl-11 col-xl-9 col-lg-11 col-md-11     px-5 px-lg-4 py-2 mt-2">
+                                    <h4 class="fw-bold">Daniel Clifford</h4>
+                                    <p>Verified Graduate</p>
+                                </div>
+                                <!-- User Description -->
+                                <!--        FLOAT-LEFT      DEFAULT COLUMNS     MARGIN        -->
+                                <div class="float-start     col-12              mt-5 mt-xl-3 ">
+                                    <h3 class="h6 card-title fw-bold">I received a job offer mid-course, and the subjects I learned were current, if not more so, in the company I joined. I honestly feel I got every penny’s worth.</h3>
+                                    <p class="text-purple-900">“ I was an EMT for many years before I joined the bootcamp. I’ve been looking to make a transition and have heard some people who had an amazing experience here. I signed up for the free intro course and found it incredibly fun! I enrolled shortly thereafter. The next 12 weeks was the best - and most grueling - time of my life. Since completing the course, I’ve successfully switched careers, working as a Software Engineer at a VR startup. ”</p>
+                                </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Columns taken up -->
+                <!--        COLUMNS SIZES                                       MARGIN ON THE Y AXIS            LEFT HAND SIDE OFFSET VALUES                    PADDING CREATES EVEN GAP BETWEEN DIVS AT LARGER SIZES -->
+                <div class="col-xxl-4 col-xl-6 col-lg-11 col-md-10 col-sm-10     my-lg-0 my-md-2 my-sm-4     offset-xl-0 offset-lg-1 offset-md-1 offset-sm-1    wrap-padding ">
+                    <!--        CARD MAIN DIV   BACKGROUND COLOR    WHITE TEXT     BOX-SHADOW      BOX-SHORT IS THE CUSTOM CLASS FOR HEIGHT OF 4 DIVS -->
+                    <div class="card            bg-secondary        text-light     shadow          box-short ">
+                        <!-- Card Beginning -->
+                        <!--        CARD-BODY IS AN INNER DIV WHICH CREATES A MARGIN AROUND ANYTHING INSERTED       	-->                        
+                        <div class="card-body">
+                            
+                                <!-- User Image -->
+                                <!--        FLOAT-LEFT      COLUMNS SIZES       -->
+                                <div class="float-start     col-xxl-2 col-xl-3 col-lg-1 col-md-1 col-xs-12">
+                                    <img class="rounded-circle img-sizing" src="https://randomuser.me/api/portraits/men/91.jpg">
+                                </div>
+                                <!-- User Info -->
+                                <!--        FLOAT-LEFT      COLUMNS SIZES                                       PADDING & MARGIN        -->
+                                <div class="float-start     col-xxl-10 col-xl-9 col-lg-11 col-md-11 col-xs-5    px-5 px-lg-4 py-2 mt-2">
+                                    <h4 class="fw-bold">Jonathan Walters</h4>
+                                    <p>Verified Graduate</p>
+                                </div>
+                                <!-- User Description -->
+                                <!--        FLOAT-LEFT      DEFAULT COLUMNS     MARGIN        -->
+                                <div class="float-start     col-12              mt-5 mt-xl-3">
+                                    <h3 class="h6 card-title fw-bold">The team was very supportive and kept me motivated</h3>
+                                    <p class="card-text">“ I started as a total newbie with virtually no coding skills. I now work as a mobile engineer for a big company. This was one of the best investments I’ve made in myself. ”</p>
+                                
+                                </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Columns taken up -->
+                <!--        COLUMNS SIZES                                       MARGIN ON THE Y AXIS            LEFT HAND SIDE OFFSET VALUES                    PADDING CREATES EVEN GAP BETWEEN DIVS AT LARGER SIZES -->
+                <div class="col-xxl-4 col-xl-6 col-lg-11 col-md-10 col-sm-10    my-lg-0 my-md-2 my-sm-4     offset-xl-0 offset-lg-1 offset-md-1 offset-sm-1     wrap-padding ">
+                    <!--        CARD MAIN DIV   BOX-SHADOW      BOX-SHORT IS THE CUSTOM CLASS FOR HEIGHT OF 4 DIVS -->
+                    <div class="card            shadow          box-short">
+                        <!-- Card Beginning -->
+                        <!--        CARD-BODY IS AN INNER DIV WHICH CREATES A MARGIN AROUND ANYTHING INSERTED       	-->
+                        <div class="card-body">
+                            
+                                <!-- User Image -->
+                                <!--        FLOAT-LEFT      COLUMNS SIZES       -->
+                                <div class="float-start     col-xxl-2 col-xl-3 col-lg-1 col-md-1">
+                                    <img class="rounded-circle img-sizing" src="https://randomuser.me/api/portraits/women/45.jpg">
+                                </div>
+                                <!-- User Info -->
+                                <!--        FLOAT-LEFT      COLUMNS SIZES                               PADDING & MARGIN        -->
+                                <div class="float-start     col-xxl-10 col-xl-9 col-lg-11 col-md-11     px-5 px-lg-4 py-2 mt-2">
+                                    <h4 class="fw-bold">Jeanette Harmon</h4>
+                                    <p class="text-muted">Verified Graduate</p>
+                                </div>
+                                <!-- User Description -->
+                                <!--        FLOAT-LEFT      DEFAULT COLUMNS     MARGIN        -->
+                                <div class="float-start     col-12               mt-5 mt-xl-3">
+                                    <h3 class="h6 card-title fw-bold">An overall wonderful and rewarding experience</h3>
+                                    <p class="card-text">“ Thank you for the wonderful experience! I now have a job I really enjoy, and make a good living while doing something I love. ”</p>
+                                
+                                </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Columns taken up -->
+                 <!--        COLUMNS SIZES                                       MARGIN ON THE Y AXIS            LEFT HAND SIDE OFFSET VALUES                    PADDING CREATES EVEN GAP BETWEEN DIVS AT LARGER SIZES -->
+                <div class="col-xxl-8 col-xl-6 col-lg-11 col-md-10 col-sm-10    my-lg-0 my-md-2 my-sm-4     offset-xl-0 offset-lg-1 offset-md-1 offset-sm-1     wrap-padding ">
+                    <!--        CARD MAIN DIV   BACKGROUND COLOR    WHITE TEXT     BOX-SHADOW      BOX-SHORT IS THE CUSTOM CLASS FOR HEIGHT OF 4 DIVS -->
+                    <div class="card            bg-warning          text-light     shadow          box-short">
+                        <!-- Card Beginning -->
+                        <!--        CARD-BODY IS AN INNER DIV WHICH CREATES A MARGIN AROUND ANYTHING INSERTED       	-->
+                        <div class="card-body">
+                            
+                                <!-- User Image -->
+                                <!--        FLOAT-LEFT      COLUMNS SIZES       -->
+                                <div class="float-start     col-xxl-1 col-xl-2 col-lg-1 col-md-1">
+                                    <img class="rounded-circle img-sizing" src="https://randomuser.me/api/portraits/men/92.jpg">
+                                </div>
+                                <!-- User Info -->
+                                <!--        FLOAT-LEFT      COLUMNS SIZES                               PADDING & MARGIN        -->
+                                <div class="float-start     col-xxl-11 col-xl-9 col-lg-11 col-md-11     px-5 px-lg-4 py-2 mt-2">
+                                    <h4 class="fw-bold">Patrick Abrams</h4>
+                                    <p>Verified Graduate</p>
+                                </div>
+                                <!-- User Description -->
+                                <!--        FLOAT-LEFT      DEFAULT COLUMNS     MARGIN        -->
+                                <div class="float-start     col-12              mt-5 mt-xl-3">
+                                    <h3 class="h6 card-title fw-bold">Awesome teaching support from TAs who did the bootcamp themselves. Getting guidance from them and learning from their experiences was easy.</h3>
+                                    <p class="card-text">“ The staff seem genuinely concerned about my progress which I find really refreshing. The program gave me the confidence necessary to be able to go out in the world and present myself as a capable junior developer. The standard is above the rest. You will get the personal attention you need from an incredible community of smart and amazing people. ”</p>
+                                
+                                </div>
+                            
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <!-- Inner Row End -->     
+          
+</div>
+<!-- col-8 END -->
+
+                <!-- Columns taken up -->
+                <!--        COLUMNS SIZES                                       MARGIN ON THE Y AXIS            LEFT HAND SIDE OFFSET VALUES                    PADDING CREATES EVEN GAP BETWEEN DIVS AT LARGER SIZES -->
+                <div class="col-xxl-3 col-xl-4 col-lg-10 col-md-10 col-sm-10     offset-xl-0 offset-lg-1 offset-md-1 offset-sm-1      my-lg-0 my-md-2 my-sm-4 m-xs-4    wrap-padding">
+                    <!--        CARD MAIN DIV   BOX-SHADOW      BOX-LONG IS THE CUSTOM CLASS FOR HEIGHT OF 1 DIV -->
+                    <div class="card            shadow          box-long">
+                        <!-- Card Beginning -->
+                        <!--        CARD-BODY IS AN INNER DIV WHICH CREATES A MARGIN AROUND ANYTHING INSERTED       	-->
+                        <div class="card-body">
+                            
+                                <!-- User Image -->
+                                <!--        FLOAT-LEFT      COLUMNS SIZES       -->
+                                <div class="float-start     col-xxl-2 col-xl-3 col-lg-1 col-md-2 col-xs-12">
+                                    <img class="rounded-circle img-sizing" src="https://randomuser.me/api/portraits/women/82.jpg">
+                                </div>
+                                <!-- User Info -->
+                                <!--        FLOAT-LEFT      COLUMNS SIZES                               PADDING & MARGIN        -->
+                                <div class="float-start     col-xxl-10 col-xl-9 col-lg-11 col-md-10     px-xl-5 px-lg-5 py-2 mt-2">
+                                    <h4 class="fw-bold">Kira Whittle</h4>
+                                    <p class="text-muted">Verified Graduate</p>
+                                </div>
+                                <!-- User Description -->
+                                <!--        FLOAT-LEFT      DEFAULT COLUMNS     MARGIN        -->
+                                <div class="float-start     col-12              mt-5 mt-xl-3">
+                                    <h3 class="h6 card-title fw-bold">Such a life-changing experience. Highly recommended!</h3>
+                                    <p class="card-text">“ Before joining the bootcamp, I’ve never written a line of code. I needed some structure from professionals who can help me learn programming step by step. I was encouraged to enroll by a former student of theirs who can only say wonderful things about the program. The entire curriculum and staff did not disappoint. They were very hands-on and I never had to wait long for assistance. The agile team project, in particular, was outstanding. It took my learning to the next level in a way that no tutorial could ever have. In fact, I’ve often referred to it during interviews as an example of my developent experience. It certainly helped me land a job as a full-stack developer after receiving multiple offers. 100% recommend! ”</p>
+                                
+                                </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            
+</div>                        
+
+
+</section>
+
+
+<script src="js/script.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "bootstrap": "^5.3.1",
+    "sass": "^1.66.1"
+  },
+  "name": "bootstrap-5-setup",
+  "version": "1.0.0",
+  "description": "starting temp",
+  "main": "index.js",
+  "scripts": {
+    "build:sass": "sass --no-source-map scss:css",
+    "watch:sass": "sass --no-source-map --watch scss:css"
+  },
+  "author": "Stephen Farrell",
+  "license": "MIT"
+}

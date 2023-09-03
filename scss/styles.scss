@@ -1,0 +1,28 @@
+$primary: #333;
+
+body {
+    background-color: $primary;
+    color: #fff;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+a{
+    color: #fff;
+}
+
+.img-sizing {
+    width: 90px;
+    height: 90px;
+    border: 5px solid #fff;
+}
+.box-short {
+    height: 500px;
+}
+
+.box-long {
+    height: 1063px;
+    margin-top: -4px;
+}
+
+.wrap-padding{
+    padding: 0.5%;
+}
